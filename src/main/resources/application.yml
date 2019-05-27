@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      discovery:
+        ## 默认就是true，如果不想注册到zookeeper，这里可以设置为false（启动后zkui找不到节点）
+        enabled: true
+  application:
+    name: sc_zookeeper
